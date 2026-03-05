@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepStyle Shoes</title>
+    <style>
+        /* Reset default margins */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Dark blue gradient background with subtle shapes */
+        body {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            position: relative;
+            color: white;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            right: -80px;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .company-details {
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+
+        .company-details svg {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .company-details h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .company-details p {
+            margin: 3px 0 0 0;
+            font-size: 14px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Banner Section */
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner .text {
+            max-width: 500px;
+        }
+
+        .banner h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .banner button {
+            background-color: #0d47a1;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 71, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-weight: 300; /* thin line text */
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            .company-details {
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Left: Company Details with White Bird SVG Logo -->
+    <div class="company-details">
+        <!-- White Bird SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="white">
+            <path d="M2 32c0 16.568 13.432 30 30 30s30-13.432 30-30S48.568 2 32 2 2 15.432 2 32zm50-3c-3.5 3-10 8-17 8s-10-5-14-8c3.5-3 10-8 17-8s10 5 14 8z"/>
+        </svg>
+        <div>
+            <h1>StepStyle Shoes</h1>
+            <p>📧 stepstyle@gmail.com | 📞 077-1234567</p>
+        </div>
+    </div>
+
+    <!-- Right: Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- Banner Section -->
+<section class="banner">
+    <div class="text">
+        <h2>Walk with Style & Confidence</h2>
+        <p>Trendy, Sporty & Elegant Shoes in Sri Lanka</p>
+        <button onclick="location.href='products.html'">Shop Now</button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    © 2026 StepStyle Shoes
+</footer>
+
+</body>
+</html>

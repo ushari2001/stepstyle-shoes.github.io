@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Products - StepStyle Shoes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+        }
+
+        header {
+            background-color: #0d47a1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo svg {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            fill: white;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            text-align: center;
+            padding: 40px;
+        }
+
+        h2 {
+            color: #0d47a1;
+        }
+
+        .product-card {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            vertical-align: top;
+        }
+
+        .product-card img {
+            width: 200px;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0 5px 0;
+        }
+
+        .product-card p.price {
+            color: green;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .product-card a {
+            text-decoration: none;
+            color: #0d47a1;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Logo with white bird -->
+    <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+            <path d="M2 32c0 16.568 13.432 30 30 30s30-13.432 30-30S48.568 2 32 2 2 15.432 2 32zm50-3c-3.5 3-10 8-17 8s-10-5-14-8c3.5-3 10-8 17-8s10 5 14 8z"/>
+        </svg>
+        <h1 style="margin:0; font-size:24px;">StepStyle Shoes</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Our Shoe Collection</h2>
+
+    <!-- Product 1 -->
+    <div class="product-card">
+        <img src="images/product1.jpg" alt="Nike Air Max">
+        <h3>Nike Air Max</h3>
+        <p class="price">Rs. 15,000</p>
+        <p>Comfortable running shoe.</p>
+        <a href="product1.html">View Details</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+        <img src="images/product2.jpg" alt="Adidas Running Pro">
+        <h3>Adidas Running Pro</h3>
+        <p class="price">Rs. 13,500</p>
+        <p>Lightweight sports shoe.</p>
+        <a href="product2.html">View Details</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+        <img src="images/product3.jpg" alt="Puma Casual Walk">
+        <h3>Puma Casual Walk</h3>
+        <p class="price">Rs. 11,000</p>
+        <p>Perfect for daily wear.</p>
+        <a href="product3.html">View Details</a>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+        <img src="images/product4.jpg" alt="Formal Leather Shoe">
+        <h3>Formal Leather Shoe</h3>
+        <p class="price">Rs. 9,500</p>
+        <p>Elegant office style.</p>
+        <a href="product4.html">View Details</a>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+        <img src="images/product5.jpg" alt="Women Classic Heels">
+        <h3>Women Classic Heels</h3>
+        <p class="price">Rs. 8,000</p>
+        <p>Stylish & comfortable.</p>
+        <a href="product5.html">View Details</a>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+        <img src="images/product6.jpg" alt="Sports Sneakers X">
+        <h3>Sports Sneakers X</h3>
+        <p class="price">Rs. 12,000</p>
+        <p>High performance design.</p>
+        <a href="product6.html">View Details</a>
+    </div>
+
+</section>
+
+</body>
+</html>
