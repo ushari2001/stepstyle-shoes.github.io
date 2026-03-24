@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>StepStyle Shoes - Nike Air Max</title>
+        <title>StepStyle Shoes - Nike Air Max</title>
     <style>
         body { margin:0; font-family: Arial; background:#f5f5f5; color:#0d47a1; }
+
         header { display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:#0d47a1; color:white; }
+
         nav a { color:white; margin-left:20px; text-decoration:none; font-weight:bold; }
+
         main { padding:50px; display:flex; flex-wrap:wrap; justify-content:center; gap:50px; }
+
         .product-image { flex:1 1 400px; max-width:500px; }
         .product-image img { width:100%; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2); }
         .product-details { flex:1 1 400px; max-width:500px; }
         .product-details h2 { font-size:36px; margin-bottom:10px; }
+
         .price { font-size:28px; color:#ff6f00; margin-bottom:20px; }
         table { width:100%; border-collapse:collapse; margin-bottom:20px; }
         table, th, td { border:1px solid #0d47a1; }
         th, td { padding:10px; text-align:left; }
+
         .add-cart-btn {
             background:#0d47a1;
             color:white;
@@ -47,30 +52,40 @@
 </header>
 
 <main>
-    <!-- Product Image -->
+    <!Product Image>
     <div class="product-image">
         <img src="images/product1.jpg" alt="Nike Air Max">
     </div>
 
-    <!-- Product Details -->
+    <!Product Details>
     <div class="product-details">
         <h2>Nike Air Max</h2>
         <p class="price">LKR 15,000</p>
         <p class="description">Comfortable running shoe made with high-quality synthetic materials. Perfect for casual wear and sports activities.</p>
 
-        <!-- Specifications Table -->
+        <!Specifications Table>
         <table>
-            <tr><th>Specification</th><th>Details</th></tr>
-            <tr><td>Material</td><td>Synthetic & Rubber</td></tr>
-            <tr><td>Color</td><td>Red/Black</td></tr>
-            <tr><td>Sizes Available</td><td>38, 39, 40, 41, 42</td></tr>
-            <tr><td>Weight</td><td>400g (per shoe)</td></tr>
+            <tr>
+            <th>Specification</th><th>Details</th>
+</tr>
+            <tr>
+            <td>Material</td><td>Synthetic & Rubber</td>
+</tr>
+            <tr>
+            <td>Color</td><td>Red/Black</td>
+</tr>
+            <tr>
+            <td>Sizes Available</td><td>38, 39, 40, 41, 42</td>
+</tr>
+            <tr>
+            <td>Weight</td><td>400g (per shoe)</td>
+</tr>
         </table>
 
-        <!-- Add to Cart (static link to cart page) -->
+        <!Add to Cart (static link to cart page)>
         <a href="cart.html" class="add-cart-btn">Add to Cart</a>
 
-        <!-- Back to Products -->
+        <!Back to Products>
         <a href="products.html" class="back-link">← Back to Products</a>
     </div>
 </main>
