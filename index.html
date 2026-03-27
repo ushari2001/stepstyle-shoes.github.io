@@ -1,11 +1,10 @@
-<DOCTYPE!>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-     <title>
-         StepStyle Shoes
-     </title>
-</head>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepStyle Shoes</title>
+    <style>
         /* Reset default margins */
         body, html {
             margin: 0;
@@ -14,20 +13,23 @@
             font-family: Arial, sans-serif;
         }
 
-        /* dark bule gradient background with subtle shapes */
+        /* Dark blue gradient background with subtle shapes */
         body {
-            background: linear-gradient(135deg, #c8d8e4, #f2f2f2);
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
             position: relative;
-         }
-  body::before {
+            color: white;
+        }
+
+        body::before {
             content: '';
             position: absolute;
             top: -50px;
             left: -50px;
             width: 300px;
             height: 300px;
-            }
-
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
 
         body::after {
             content: '';
@@ -35,10 +37,12 @@
             bottom: -80px;
             right: -80px;
             width: 400px;
-            height: 400px;}
+            height: 400px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
 
-            
-  /* Header */
+        /* Header */
         header {
             display: flex;
             justify-content: space-between;
@@ -48,7 +52,6 @@
             z-index: 2;
         }
 
-        
         .company-details {
             display: flex;
             align-items: center;
@@ -145,52 +148,47 @@
             .company-details {
                 justify-content: center;
                 margin-bottom: 10px;
-     color: white;
-
-</style>
-
+            }
+        }
+    </style>
+</head>
 <body>
-    <header>
-         <h1>StepStyle Shoes</h1>
-<nav>
+
+<header>
+    <!-- Left: Company Details with White Bird SVG Logo -->
+    <div class="company-details">
+        <!-- White Bird SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="white">
+            <path d="M2 32c0 16.568 13.432 30 30 30s30-13.432 30-30S48.568 2 32 2 2 15.432 2 32zm50-3c-3.5 3-10 8-17 8s-10-5-14-8c3.5-3 10-8 17-8s10 5 14 8z"/>
+        </svg>
+        <div>
+            <h1>StepStyle Shoes</h1>
+            <p>📧 stepstyle@gmail.com | 📞 077-1234567</p>
+        </div>
+    </div>
+
+    <!-- Right: Navigation -->
+    <nav>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
-        <a href="productsdetails.html">Products details</a>
         <a href="cart.html">Cart</a>
         <a href="contact.html">Contact</a>
     </nav>
-<br>
 </header>
-<section><center>
-       <h2>:::: WELCOME TO STEPSTYLE SHOES ::::</h2> </center>
 
-</section>
-<br>
-<br>
-
-<style="font-family: Arial; display:flex; justify-content:center; align-items:center; height:100vh;"><center>
-
-     <div style="border:1px solid #ccc; padding:20px; border-radius:8px; width:250px;">
-        <h3 style="text-align:center;">Login</h3>
-
-        <input type="email" placeholder="Email" required
-               style="width:100%; padding:8px; margin:8px 0;"><br>
-
-        <input type="password" placeholder="Password" required
-               style="width:100%; padding:8px; margin:8px 0;"><br>
-
-        <a href="products.html">
-            <button style="width:100%; padding:8px; background:#007BFF; color:white; border:none;">
-                Login
-            </button>
-        </a>
+<!-- Banner Section -->
+<section class="banner">
+    <div class="text">
+        <h2>Walk with Style & Confidence</h2>
+        <p>Trendy, Sporty & Elegant Shoes in Sri Lanka</p>
+        <button onclick="location.href='products.html'">Shop Now</button>
     </div>
-<div>
-                        <p>📧 stepstyle@gmail.com | 📞 077-1234567</p>
-        </div>
-</center>
-    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    © 2026 StepStyle Shoes
+</footer>
 
 </body>
 </html>
-
